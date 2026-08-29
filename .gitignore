@@ -1,0 +1,68 @@
+# ==========================================
+# Java Compiled Source & Artifacts
+# ==========================================
+*.class
+*.log
+*.jar
+*.war
+*.ear
+*.nar
+*.car
+*.tar.gz
+*.exe
+
+# ==========================================
+# Build Tools (Maven & Gradle)
+# ==========================================
+# Maven
+target/
+pom.xml.tag
+pom.xml.releaseBackup
+pom.xml.versionsBackup
+pom.xml.next
+release.properties
+dependency-reduced-pom.xml
+buildNumber.properties
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# ==========================================
+# IDEs & Text Editors
+# ==========================================
+# IntelliJ IDEA
+.idea/
+*.iws
+*.iml
+*.ipr
+out/
+
+# Eclipse
+.metadata/
+bin/
+tmp/
+.classpath
+.project
+.settings/
+*.launch
+.factorypath
+
+# VS Code
+.vscode/
+
+# ==========================================
+# Operating System Files
+# ==========================================
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
