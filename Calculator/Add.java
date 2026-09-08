@@ -1,19 +1,20 @@
 package Calculator;
 import java.util.Scanner;
+// Calculator Testo
 
 public class Add {
     public static void main(String[] args) {
-        Scanner obj = new Scanner(System.in);
-        
+        Scanner scanner = new Scanner(System.in);
+
         System.out.print("Input num1: ");
-        int x = obj.nextInt();
+        int num1 = scanner.nextInt();
         System.out.print("Input num2: ");
-        int y = obj.nextInt();
+        int num2 = scanner.nextInt();
 
-        int sum = x + y;
+        int sum = num1 + num2;
 
-        System.out.println(x + " + " + y + " = " + sum);
+        System.out.println(num1 + " + " + num2 + " = " + sum);
 
-        obj.close();
+        scanner.close();
     }
 }
