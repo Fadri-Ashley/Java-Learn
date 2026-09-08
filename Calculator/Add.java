@@ -1,12 +1,19 @@
 package Calculator;
+import java.util.Scanner;
 
 public class Add {
     public static void main(String[] args) {
-        int a = 2;
-        int b = 5; 
+        Scanner obj = new Scanner(System.in);
+        
+        System.out.print("Input num1: ");
+        int x = obj.nextInt();
+        System.out.print("Input num2: ");
+        int y = obj.nextInt();
 
-        int sum = a + b;
+        int sum = x + y;
 
-        System.out.println(a + " + " + b + " = " + sum);
+        System.out.println(x + " + " + y + " = " + sum);
+
+        obj.close();
     }
 }
