@@ -1,6 +1,6 @@
 package Calculator;
 import java.util.Scanner;
-// Calculator Testo
+// Add.java
 
 public class Add {
     public static void main(String[] args) {
@@ -11,10 +11,14 @@ public class Add {
         System.out.print("Input num2: ");
         int num2 = scanner.nextInt();
 
-        int sum = num1 + num2;
+        int result = AddNumber(num1, num2);
 
-        System.out.println(num1 + " + " + num2 + " = " + sum);
+        System.out.println(num1 + " + " + num2 + " = " + result);
 
         scanner.close();
+    }
+
+    public static int AddNumber(int num1, int num2) {
+        return num1 + num2;
     }
 }

@@ -10,10 +10,14 @@ public class Div {
         System.out.print("Input num2: ");
         float num2 = scanner.nextFloat();
 
-        float sum = num1 / num2;
+        float result = DivNumber(num1, num2);
 
-        System.out.println(num1 + " : " + num2 + " = " + sum);
+        System.out.println(num1 + " : " + num2 + " = " + result);
         
         scanner.close();
+    }
+
+    public static float DivNumber(float num1, float num2) {
+        return num1/num2;
     }
 }

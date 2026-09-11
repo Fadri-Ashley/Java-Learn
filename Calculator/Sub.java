@@ -10,10 +10,14 @@ public class Sub {
         System.out.print("Input num2: ");
         int num2 = scanner.nextInt();
 
-        int sum = num1 - num2;
+        int result = SubNumber(num1, num2);
 
-        System.out.println(num1 + " - " + num2 + " = " + sum);
+        System.out.println(num1 + " - " + num2 + " = " + result);
 
         scanner.close();
+    }
+
+    public static int SubNumber(int num1, int num2) {
+        return num1 - num2;
     }
 }
