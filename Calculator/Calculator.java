@@ -5,30 +5,40 @@ public class Calculator {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        System.out.println("Choose Operation: ");
+        System.out.println("1. Addition");
+        System.out.println("2. Substraction");
+        System.out.println("3. Multiply");
+        System.out.println("4. Division");
         System.out.print("Input number: ");
-        int day = scanner.nextInt();
+        int numMenu = scanner.nextInt();
 
-        System.out.print("Input num1: ");
-        int num1 = scanner.nextInt();
-        System.out.print("Input num2: ");
-        int num2 = scanner.nextInt();
+        if (numMenu < 5 && numMenu > 0) {
+            System.out.print("Input num1: ");
+            int num1 = scanner.nextInt();
+            System.out.print("Input num2: ");
+            int num2 = scanner.nextInt();
 
-        switch (day) {
-            case 1:
-                System.out.println("Result: " + AddNumber(num1, num2));
-                break;
-            case 2:
-                System.out.println("Result: " + SubNumber(num1, num2));
-                break;
-            case 3:
-                System.out.println("Result: " + MulNumber(num1, num2));
-                break;
-            case 4:
-                System.out.println("Result: " + DivNumber(num1, num2));
-                break;
-            default:
-                System.out.println("Banano");
+            switch (numMenu) {
+                case 1:
+                    System.out.println("Result: " + AddNumber(num1, num2));
+                    break;
+                case 2:
+                    System.out.println("Result: " + SubNumber(num1, num2));
+                    break;
+                case 3:
+                    System.out.println("Result: " + MulNumber(num1, num2));
+                    break;
+                case 4:
+                    System.out.println("Result: " + DivNumber(num1, num2));
+                    break;
+                default:
+                    System.out.println("Banano");
+            }
+        } else {
+            System.out.println("Invalid Number");
         }
+        
 
         scanner.close();
     }
