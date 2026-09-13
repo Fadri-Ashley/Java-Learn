@@ -9,9 +9,10 @@ public class Calculator {
         while (true) {
             System.out.println("Choose Operation: ");
             System.out.println("1. Addition");
-            System.out.println("2. Substraction");
+            System.out.println("2. Subtraction");
             System.out.println("3. Multiply");
             System.out.println("4. Division");
+            System.out.println("5. Exit menu");
             System.out.print("Input number: ");
             int numMenu = scanner.nextInt();
 
