@@ -9,13 +9,19 @@ public class Guess {
         Scanner scanner = new Scanner(System.in);
 
         int count = 0;
+        int K = 4;
 
         while (true) {
+            System.out.print("Input number: ");
+
             int guessNum = scanner.nextInt();
 
             if (guessNum == randomNum) {
                 System.out.println("You win!!!");
                 System.out.println(count + " attempts");
+                break;
+            } else if (count == K) {
+                System.out.println("You exhausted 5 chances, the correct number was " + randomNum);
                 break;
             } else if (guessNum < randomNum) {
                 System.out.println("To Low");
@@ -25,7 +31,7 @@ public class Guess {
                 System.out.println("Error");
             }
 
-            count ++;
+            count++;
         }
 
         scanner.close();
